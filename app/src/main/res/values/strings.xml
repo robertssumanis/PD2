@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PD2</string>
+    <string-array name="Names">
+        <item>Roberts Šūmanis</item>
+        <item>Dāvids Markavs</item>
+        <item>Artūrs Kočans</item>
+    </string-array>
+</resources>
