@@ -19,7 +19,6 @@ public class SecondActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Toast.makeText(getApplicationContext(), "GOING BACK", Toast.LENGTH_SHORT).show();
                 finish();
             }
         });

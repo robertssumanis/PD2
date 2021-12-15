@@ -45,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
                 String arr[] = getResources().getStringArray(R.array.Names);
 
                 if (isChecked) {
-                    Toast.makeText(getApplicationContext(), arr[which] + " IS CHECKED", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), arr[which] + " checked", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(getApplicationContext(), arr[which] + " IS UNCHECKED", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), arr[which] + " unchecked", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -55,20 +55,19 @@ public class MainActivity extends AppCompatActivity {
         builder.setNegativeButton("Cancel",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int whichButton) {
-                        Toast.makeText(getApplicationContext(), "CANCEL IS CLICKED", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "You closed dialog", Toast.LENGTH_SHORT).show();
                     }
                 });
 
         builder.setPositiveButton(android.R.string.ok, null);
 
         builder.create();
-        //builder.show();
 
         Button positiveButton = builder.show().getButton(AlertDialog.BUTTON_POSITIVE);
         positiveButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v){
-                Toast.makeText(getApplicationContext(), "OK IS CLICKED", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "You clicked OK", Toast.LENGTH_SHORT).show();
             }
         });
     }

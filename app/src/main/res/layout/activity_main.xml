@@ -6,25 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/on_second"
-        android:layout_margin="30dp"
-        android:text="On Second"
-        android:backgroundTint="@color/cardview_shadow_start_color"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="1-st Activity" />
 
     <Button
+        android:id="@+id/on_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btn"
-        android:layout_margin="30dp"
-        android:layout_below="@id/on_second"
-        android:text="Dialog"
-        android:backgroundTint="@color/cardview_shadow_start_color"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Go to 2-nd" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/on_second"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Dialog" />
 
 </RelativeLayout>
